@@ -26,8 +26,7 @@ const UserForm: React.FC<Props> = ({onSubmit}) => {
       activity = 'Not activity'
     }
      e.preventDefault();
-    console.log(user);
-    onSubmit({
+     onSubmit({
       id: Math.random().toString(),
       ...user,
       isActive: activity
